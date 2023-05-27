@@ -1,3 +1,4 @@
+
 # v1.0
 **Programoje testuojamos dvi strategijos:**
 1. Bendro studentai konteinerio (vector, list ir deque tipų) skaidymas (rūšiavimas) į du naujus to paties tipo konteinerius: "vargšiukų" ir "kietiakų". (Jau prieš tai naudota strategija ***v0.4*** ir ***v0.5*** programose)
@@ -60,3 +61,7 @@ Sukurta C++ studentu programa, kurioje:
 
 # Obj_Pro
 Čia bus kuriama objektinio programavimo C++ programa, susijusi su studentų duomenimis.
+
+# Obj_Pro_2
+Čia bus tęsiama programa "Obj_Pro", bus naudojomos klasės.
+
