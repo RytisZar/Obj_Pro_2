@@ -1,3 +1,10 @@
+# v1.2
+**Programoje atlikti pakeitimai**  
+1. Realizuotas *Rule of Five* *Studentas* klasei
+2. Pridėtas cout<< operatorius, kuris terminale iššspausdina Studento vardą, pavardę, gautus pažymius bei egzaminą.
+
+
+
 # v1.1
 **Programoje atlikti pakeitimai**   
 Pakeista *studentas* **struktūra** į *Studentas* **klasę** (sukurtas *Studentas.h* failas): 
