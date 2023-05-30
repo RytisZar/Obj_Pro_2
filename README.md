@@ -1,6 +1,6 @@
 # v1.1
 **Programoje atlikti pakeitimai**   
-Pakeista *studentas* **struktūra** į *Studentas* **klasę**: 
+Pakeista *studentas* **struktūra** į *Studentas* **klasę** (sukurtas *Studentas.h* failas): 
 1. Klasėje perkelti *Studentas* duomenys į private skiltį, o kitos funkijos kaip "setters" ir "getters" sukurti public skiltyje, jog būtų galima gauti prieigą prie private duomenų.
 2. Visame kode padaryti pakeitimai, kad naudoti *Studentas* klasę.
 
