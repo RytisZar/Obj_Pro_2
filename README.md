@@ -1,3 +1,27 @@
+# v1.5
+**Programoje atlikti pakeitimai**. 
+1. Vietoje turimos vienos Studentas (ar kažkaip kitaip pavadintos) klasės sukurkta dvi: bazinė klasė, skirta bendrai aprašyti žmogų ir tuomet iš jos išvestinė (derived) klasė - Studentas.
+2. Padaryta, kad žmogui skirta bazinė klasė būtų abstrakčioji klasė, t.y. nebūtų galima sukurti žmogaus tipo objektų, o tik objektus gautus iš jos išvestinių klasių.
+
+# v1.2
+**Programoje atlikti pakeitimai**  
+1. Realizuotas *Rule of Five* *Studentas* klasei
+2. Pridėtas cout<< operatorius, kuris terminale iššspausdina Studento vardą, pavardę, gautus pažymius bei egzaminą.
+
+
+
+# v1.1
+**Programoje atlikti pakeitimai**   
+Pakeista *studentas* **struktūra** į *Studentas* **klasę** (sukurtas *Studentas.h* failas): 
+1. Klasėje perkelti *Studentas* duomenys į private skiltį, o kitos funkijos kaip "setters" ir "getters" sukurti public skiltyje, jog būtų galima gauti prieigą prie private duomenų.
+2. Visame kode padaryti pakeitimai, kad naudoti *Studentas* klasę.
+
+**Klasės ir struktūros palyginimai**   
+Pakeitus visą kodą, kad būtų galima sukompiliuoti kodą su klasėmis, taip pat ir labai minimaliai pasikeitė programos greitis. Su *studentas* struktūra, kad būtų įvykdytas kodas su 100000 bei 1000000 įrašų, programa užtruko *32,8sec*, o su *Studentas* klase, kad būtų įvykdytas kodas su 100000 bei 1000000 įrašų, programa užtruko *34,1sec* (rezultatus galima pamatyti ***struct_greitis.png*** bei ***klases_greitis.png***).
+
+**Atlikita eksperimentinė analizė priklausomai nuo kompiliatoriaus optimizavimo lygio, nurodomo per flag'us: O1, O2, O3**
+Pasinaudojus *g++* kompiliatorių,į terminalą buvo įvestos eilutės *g++ -O3/O2/O1 **funkcijos.cpp** **v1.1_obj.cpp***, jog būtų atlikta ekspermentinė analizė su skirtingais kompiliatoriaus optimizavimo lygiais.  
+**Rezultatai:** greičiausi kompiliatoriaus optimizavimo lygiai buvo **O2** ir **O3**, **O2** per *13,2sec*, o **O3** per *13,4sec*, kurie labai mažai kuo skyrėsi, vos *0,2sec*, tačiau programa žymiai greičiau veikė negu sukompiliuojama paprastai be jokių optimizavimų lygių, net *~20sec* greičiau, jei programa vykdoma su 1000000 studentų. Lėčiausias optimizavimo lygis buvo **O1**, kuris užtruko *19,1sec* tačiau programa vis tiek žymiai greičiau veikė negu sukompiliuoja paprastai be jokių optimizavimo lygių. (Visus rezultatus galima pamatyti ***O1_greitis.png***, ***O2_greitis.png***, ***O3_greitis.png***).
 
 # v1.0
 **Programoje testuojamos dvi strategijos:**
